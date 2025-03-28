@@ -76,8 +76,8 @@ test('Create a New Task and Verify Task Creation', async t => {
     await t.typeText(dueDateField, '30/03/2025');
 
 
-    const descriptionField =Selector('//div[@class="ql-editor"]');
-    await t.typeText(descriptionField, 'This is a test task');
+    const descriptionField =Selector('.ql-editor');
+    await t.click(descriptionField).typeText(descriptionField, 'This is a test task'); 
    
 
 
